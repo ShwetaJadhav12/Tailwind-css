@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Login</title>
+</head>
+
+<body>
+  <main class="h-screen w-full flex items-center justify-center
+               bg-gradient-to-br from-sky-500 via-indigo-500 to-purple-600">
+
+    <!-- Glass Card -->
+    <div class="w-[380px] rounded-2xl p-8
+                bg-white/15 backdrop-blur-xl
+                border border-white/30
+                shadow-2xl text-white">
+
+      <h2 class="text-3xl font-bold mb-2 text-center">Welcome Back</h2>
+      <p class="text-sm text-white/70 text-center mb-6">
+        Please login to your account
+      </p>
+
+      <!-- Username -->
+      <input type="text" placeholder="Username or Email"
+        class="w-full h-11 mb-4 px-4 rounded-xl
+               bg-white/10 border border-white/30
+               placeholder-white/60
+               focus:outline-none focus:ring-2 focus:ring-white/40">
+
+      <!-- Password -->
+      <input type="password" placeholder="Password"
+        class="w-full h-11 mb-3 px-4 rounded-xl
+               bg-white/10 border border-white/30
+               placeholder-white/60
+               focus:outline-none focus:ring-2 focus:ring-white/40">
+
+      <!-- Remember + Forgot -->
+      <div class="flex justify-between items-center text-sm mb-5">
+        <label class="flex items-center gap-2">
+          <input type="checkbox" class="accent-white">
+          Remember me
+        </label>
+        <a href="#" class="hover:underline text-white/80">
+          Forgot?
+        </a>
+      </div>
+
+      <!-- Button -->
+      <button
+        class="w-full h-11 rounded-xl
+               bg-white text-indigo-600
+               font-semibold tracking-wide
+               hover:bg-gray-200
+               active:scale-95 transition">
+        Login
+      </button>
+
+      <!-- Register -->
+      <p class="text-center text-sm mt-6 text-white/80">
+        Don’t have an account?
+        <a href="#" class="font-semibold hover:underline">
+          Register
+        </a>
+      </p>
+
+    </div>
+  </main>
+</body>
+
+</html>
